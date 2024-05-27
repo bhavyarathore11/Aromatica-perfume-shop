@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Aromatica Perfume Shop</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Aromatica</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="Login.html">Login</a></li>
+                    <li><a href="Cart.html">Cart</a></li>
+                    <li><a href="My Account.html">My Account</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="login-section">
+        <h2>Login</h2>
+        <form id="loginForm" onsubmit="return loginUser()">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <br>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <section class="create-account-section">
+        <h2>Create Account</h2>
+        <form id="createAccountForm" onsubmit="return createAccount()">
+            <label for="newUsername">New Username:</label>
+            <input type="text" id="newUsername" required>
+            <br>
+            <label for="newPassword">New Password:</label>
+            <input type="password" id="newPassword" required>
+            <br>
+            <button type="submit">Create Account</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Perfume Shop. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Sample user data for login (replace this with a database)
+        const users = [
+            { bhavyarathore: "user1", password: "1234567" },
+            { aadhyarathore: "user2", password: "6789101" }
+
+        ];
+
+        // Function to log in
+        function loginUser() {
+            const username = document.getElementById("bhavyarathore").value;
+            const password = document.getElementById("1234567").value;
+            const user = users.find(u => u.username === username && u.password === password);
+
+            if (user) {
+                alert("Login successful");
+                // You can redirect the user to another page after successful login.
+                return true; // Allow form submission
+            } else {
+                alert("Login failed. Please check your username and password.");
+                return false; // Prevent form submission
+            }
+        }
+
+        // Function to create an account
+        function createAccount() {
+            const newUsername = document.getElementById("newUsername").value;
+            const newPassword = document.getElementById("newPassword").value;
+
+            // Check if the username is already taken
+            if (users.some(u => u.username === newUsername)) {
+                alert("Username is already taken. Please choose another.");
+                return false; // Prevent form submission
+            } else {
+                // Add the new user to the list (you might want to store this data securely on the server)
+                users.push({ username: newUsername, password: newPassword });
+                alert("Account created successfully. You can now log in.");
+                // You can redirect the user to the login page after successful registration.
+                return true; // Allow form submission
+            }
+        }
+    </script>
+</body>
+</html>
