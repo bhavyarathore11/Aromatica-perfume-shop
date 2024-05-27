@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cart - Aromatica Perfume Shop</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Aromatica</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="Login.html">Login</a></li>
+                    <li><a href="Cart.html">Cart</a></li>
+                    <li><a href="My Account.html">My Account</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="cart">
+        <h2>Your Shopping Cart</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="cartTable"></tbody>
+        </table>
+        <p id="cartTotal">Total: $0</p>
+        <button class="checkout-button" onclick="checkout()">Checkout</button>
+    </section>
+    
+    <script>
+        const cart = [];
+        const cartTable = document.getElementById('cartTable');
+        const cartTotal = document.getElementById('cartTotal');
+
+        function addToCart(productName, price) {
+            const item = {
+                name: productName,
+                price: price,
+                quantity: 2
+            };
+
+            const existingItemIndex = cart.findIndex((item) => item.name === productName);
+
+            if (existingItemIndex !== -1) {
+                cart[existingItemIndex].quantity++;
+            } else {
+                cart.push(item);
+            }
+
+            displayCart();
+        }
+
+        function displayCart() {
+            cartTable.innerHTML = ''; // Clear the current cart display
+
+            let total = 0;
+
+            cart.forEach((item, index) => {
+                const row = cartTable.insertRow();
+                const nameCell = row.insertCell(0);
+                const priceCell = row.insertCell(1);
+                const quantityCell = row.insertCell(2);
+                const totalCell = row.insertCell(3);
+                const actionCell = row.insertCell(4);
+
+                nameCell.textContent = item.name;
+                priceCell.textContent = `$${item.price}`;
+                quantityCell.textContent = item.quantity;
+                const itemTotal = item.price * item.quantity;
+                totalCell.textContent = `$${itemTotal}`;
+                total += itemTotal;
+
+                const removeButton = document.createElement('button');
+                removeButton.textContent = 'Remove';
+                removeButton.addEventListener('click', () => removeFromCart(index));
+                actionCell.appendChild(removeButton);
+            });
+
+            cartTotal.textContent = `Total: $${total}`;
+        }
+
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            displayCart();
+        }
+
+        function checkout() {
+            alert('Thank you for your purchase! Your order has been placed.');
+
+            cart.length = 0;
+            displayCart();
+        }
+    </script>
+    <footer>
+        <p>&copy; 2023 Perfume Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
