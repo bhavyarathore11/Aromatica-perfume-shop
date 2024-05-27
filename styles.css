@@ -1,0 +1,663 @@
+
+/* Body background */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('best-perfumes-women-classic-perfumes-luxe-digital.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('best-perfumes-women-classic-perfumes-luxe-digital.jpg');
+    background-size: cover;
+}
+
+/* Header styling */
+header {
+    background-color: #ffffff;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Hero section styling */
+.hero {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #f66;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e22;
+}
+
+/* Featured products section styling */
+.featured-products {
+    color:black;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.featured-products h2 {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.product {
+    display: inline-block;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.product img {
+    width: 100px;
+    height: 150px;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+.product h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #f66;
+}
+
+.buy-button {
+    display: block;
+    padding: 10px 20px;
+    background-color: #f66;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 10px auto;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #e22;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+/* Style the header content */
+.header-content {
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+}
+
+/* Align navigation items to the right */
+header nav ul {
+    list-style: none;
+    text-align: right;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.centered-container {
+    color: #fffcfc;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1200px; 
+}
+
+.home-content,
+.benefits {
+    margin-top: 20px; 
+}
+/* Product blocks styling */
+.product-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Styling for product blocks */
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    max-width: 300px;
+    margin: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.product:hover img {
+    transform: scale(1.1);
+}
+
+.product h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f66;
+}
+
+.buy-button {
+    display: block;
+    padding: 10px 20px;
+    background-color: #f66;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 10px auto;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #e22;
+}
+/*  margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.login-section, .create-account-section {
+    max-width: 500px;
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-content {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+
+.form-group input, .login-button {
+    margin: 5px 0;
+}
+
+
+body, h1, h2, p, ul, li, table {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content h1 {
+    font-size: 30px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+section.cart {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+#cartTotal {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.checkout-button {
+    background-color: #333;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.checkout-button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+/* Style the "My Account" section */
+.my-account {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.my-account h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.my-account p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.my-account h3 { 
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* Style the links within the "My Account" section */
+.my-account ul {
+    list-style: none;
+}
+
+.my-account ul li {
+    margin: 10px 0;
+}
+
+.my-account ul li a {
+    text-decoration: none;
+    color: #0074e4;
+    font-weight: bold;
+}
+
+/* Style the footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Add hover effects to links */
+a:hover {
+    color: #0056b3;
+}
+
+.my-orders {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.my-orders h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.order-list {
+    list-style: none;
+}
+
+.order-list li {
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    margin: 0 0 20px;
+    padding: 10px;
+}
+
+/* Style order details */
+.order-list li strong {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+.about-us {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-us h3 {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.about-us p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.about-us ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* Style the footer section */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+}
+
+/* Style links */
+a {
+    color: #333;
+}
+
+a:hover {
+    color: #666;
+}
+
+/* Style for the Offer Banners Section */
+.offer-banners {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f7f7f7; /* Background color for the section */
+}
+
+/* Style for each Offer Banner */
+.offer-banner {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff; /* Background color for each banner */
+    border: 1px solid #ccc; /* Border around each banner */
+    border-radius: 5px; /* Rounded corners */
+    margin: 10px;
+}
+
+.offer-banner img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Rounded image corners */
+}
+
+.offer-banner h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.offer-banner p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.offer-banner .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none;
+    border: none;
+    border-radius: 5px; /* Rounded button corners */
+    cursor: pointer;
+}
+
+.offer-banner .cta-button:hover {
+    background-color: #0056b3; /* Button background color on hover */
+}
+/* Style for each Template */
+.template {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    border-radius: 5px; /* Rounded corners */
+    margin: 10px;
+}
+
+.template img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Rounded image corners */
+}
+
+.template h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.template p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.template .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none;
+    border: none;
+    border-radius: 5px; /* Rounded button corners */
+    cursor: pointer;
+}
+
+.template .cta-button:hover {
+    background-color: #0056b3; /* Button background color on hover */
+}
+.full-width-banner {
+    background: url('stock-photo-perfume-essence-bottle-flowers.jpeg') center/cover no-repeat; /* Use your background image */
+    text-align: center;
+    padding: 50px 0; /* Adjust the padding as needed */
+    color: #fff; /* Text color */
+}
+
+
